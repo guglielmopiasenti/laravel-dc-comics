@@ -19,4 +19,4 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 // comics routes
-Route::resource('comic', ComicController::class);
+Route::resource('comics', ComicController::class);
