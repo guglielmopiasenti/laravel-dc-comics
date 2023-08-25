@@ -1,0 +1,105 @@
+@use '/resources/scss/var' as *;
+* {
+  font-family: $font;
+}
+
+.comic-container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.comic-image-wrapper {
+  position: relative;
+  z-index: 1;
+
+  .comic-image {
+    position: absolute;
+    top: -250px;
+    height: 200px;
+  }
+
+  .comic-info-img,
+  .comic-view-gallery {
+    position: absolute;
+    background-color: #05A9D8;
+    color: white;
+  }
+
+  .comic-info-img {
+    top: -245px;
+    z-index: 2;
+  }
+
+  .comic-view-gallery {
+    top: -50px;
+    padding: 0 46px;
+  }
+}
+
+.comic-details {
+  display: flex;
+  gap: 50px;
+}
+
+.comic-title-section {
+  h3.comic-title {
+    font-weight: 700;
+    padding: 50px 0;
+  }
+
+  .comic-price-availability {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+
+    
+    .comic-price,
+    .comic-available,
+    .comic-availability {
+      padding: 5px 25px;
+      background-color: #55BA59;
+      color: white;
+    }
+    .comic-price {
+      padding-right: 350px;
+    }
+  }
+
+  p.comic-description {
+    color: gray;
+  }
+}
+
+.comic-advertisement-card {
+  padding-top: 50px;
+  color: gray;
+}
+
+.comic-talent-section {
+  background-color: #F6F6F6;
+
+  .comic-talent-specs {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+
+    .comic-talent-table,
+    .comic-specs-table {
+      border-collapse: collapse;
+      thead {
+        background-color: #F6F6F6;
+        border-bottom: 1px solid lightgrey;
+      }
+      .writers, .artists, .series {
+        color: dodgerblue;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid lightgrey;
+        font-size: 0.8em; 
+      }
+    }
+  }
+}

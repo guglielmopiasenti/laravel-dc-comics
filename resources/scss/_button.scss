@@ -1,0 +1,16 @@
+@use 'var' as *;
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+      padding: 5px 25px;
+      margin: 20px 0;
+      color: white;
+      background-color: $blue;
+      border-color: $blue;
+      cursor: pointer;
+      font-weight: 700;
+  }
+}

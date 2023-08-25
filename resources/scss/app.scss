@@ -1,1 +1,14 @@
+@use 'reset';
+@use 'var' as *;
+@use 'button';
+@use 'comiccard';
+@use 'footer';
+@use 'header';
+@use 'jumbotron';
+@use 'comic';
 @import '~bootstrap/scss/bootstrap';
+
+
+* {
+  font-family: $font;
+}

@@ -1,0 +1,7 @@
+@use 'var' as *;
+#jumbo-img {
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+  min-height: 400px;
+  padding: 30px 0;
+}
