@@ -3,24 +3,20 @@
 @section('title', 'Comics')
 
 @section('main')
-<section id='comics'>
+    <section id='comics'>
+        <div class="flex-container">
 
-  <div class="container">
-      <div class="current-series button">CURRENT SERIES</div>
-
-      <div class="flex-container">
-
-          @foreach ($comics as $comic)
-              <div class="card">
-                  <a href="{{ route('comics.show', $comic) }}">
-                      <figure>
-                          <img class="comic-thumb" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                      </figure>
-                      <h4>{{ $comic['title'] }}</h4>
-                  </a>
-              </div>
-          @endforeach
-
-      </div>
+            @foreach ($comics as $comic)
+                <div class="card">
+                    <a href="{{ route('comics.show', $comic) }}">
+                        <figure>
+                            <img class="comic-thumb" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                        </figure>
+                        <h4>{{ $comic['title'] }}</h4>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+    </section>
 
 @endsection
