@@ -4,7 +4,8 @@
         <img class="img-header" src="{{ asset('img/dc-logo.png') }}" alt="DC logo">
         <ul class="ul-header">
             <li class="nav-link"> <a class="nav-link" href="#">Characters</a> </li>
-            <li class="nav-link"> <a class="nav-link" href="{{route('home')}}">Comics</a> </li>
+            <li class="nav-link"> <a class="nav-link" href="{{route('home')}}">Home</a> </li>
+            <li class="nav-link"> <a class="nav-link" href="{{route('comics')}}">Comics</a> </li>
             <li class="nav-link"> <a class="nav-link" href="#">Movies</a> </li>
             <li class="nav-link"> <a class="nav-link" href="#">TV</a> </li>
             <li class="nav-link"> <a class="nav-link" href="#">Games</a> </li>

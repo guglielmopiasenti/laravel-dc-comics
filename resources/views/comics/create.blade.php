@@ -1,11 +1,13 @@
-@extends('layout.main')
+@extends('layouts.main')
 
 @section('title', 'Add comic')
 
-@section('content')
+@section('main-content')
+<div class="container">
+
     <div class="card-title d-flex align-items-center justify-content-center">
-        <h1>Add comic</h1>
-        <a href="{{ route('teams.index') }}" class="btn-secondary">Go back</a>
+        <h1 class="my-3 mx-5">Add comic</h1>
+        <a href="{{ route('comics') }}" class="btn btn-secondary">Go back</a>
     </div>
     <div class="card-body">
         {{-- Form --}}
@@ -73,6 +75,7 @@
                 </div>
             </div>
     </div>
+</div>
     </form>
     </div>
 @endsection

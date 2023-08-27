@@ -44,11 +44,11 @@
           <tbody>
             <tr class="comic-artists">
               <td>Art by:</td>
-              <td class="artists">{{ implode(', ', $comic['artists']) }}</td>
+              <td class="artists">{{ $comic['artists'] }}</td>
             </tr>
             <tr class="comic-writers">
               <td>Written by:</td>
-              <td class="writers">{{ implode(', ', $comic['writers']) }}</td>
+              <td class="writers">{{$comic['writers'] }}</td>
             </tr>
           </tbody>
         </table>

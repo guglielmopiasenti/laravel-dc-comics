@@ -21,6 +21,7 @@ class ComicController extends Controller
      */
     public function create()
     {
+        $comics = Comic::all();
         return view('comics.create', compact('comics'));
     }
 
@@ -34,7 +35,7 @@ class ComicController extends Controller
         $new_comic = new Comic();
         $new_comic->fill($data);
         $new_comic->save();
-        return to_route("comics.index");
+        return redirect()->route('comics.index');
     }
 
     /**
