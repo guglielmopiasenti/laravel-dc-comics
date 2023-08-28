@@ -3,6 +3,16 @@
 @section('title', 'Edit comic')
 
 @section('main-content')
+
+@if ($errors->any())
+<div class="alert alert-danger">
+  <ul>
+    @foreach($errors->all() as $error)
+    <li>{{$error}}</li>
+  </ul>
+</div>
+@endif
+
 <div class="container">
     <div class="card-title d-flex align-items-center justify-content-center">
         <h1 class="my-3 mx-5">Edit comic</h1>
