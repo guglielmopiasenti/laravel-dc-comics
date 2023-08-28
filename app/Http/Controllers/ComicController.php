@@ -59,7 +59,11 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        //
+        $data = $request->all();
+        $data["price"] = "$" . $data["price"];
+        $comic->fill($data);
+        $comic->save();
+        return redirect()->route('comics.index');
     }
 
     /**
