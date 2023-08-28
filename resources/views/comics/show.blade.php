@@ -28,6 +28,7 @@
       <img src="public/img/adv.jpg" alt="">
     </div>
   </div>
+  <a href="{{route('comics.edit', $comic)}}" class="btn btn-secondary">Edit Comic</a>
 </div>
 <div class="comic-talent-section">
   <div class="comic-container">
